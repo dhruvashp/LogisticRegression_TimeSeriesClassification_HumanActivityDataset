@@ -1,0 +1,46 @@
+Total plots in d_i = 9*9
+Total plots in d_ii = 18*18
+
+A few conclusions :
+
+There were an enormous amount of plots, and thus the comparison could be made manually only to a certain extent. However
+in my comparisons, I found that
+
+1. For features that were split, say, avg_rss12_mean_1 and avg_rss12_mean_2, the scatter plots were almost nearly
+linear. Thus all those columns, that were split, then from them features were extracted, the corresponding features
+in the corresponding split columns had a linear nature of the scatter plot. Thus with everything same and the only
+difference being _1 and _2 for d_ii, we had a linear scatter plot.
+
+avg_rss12_mean_1 vs avg_rss12_mean_2     in d_ii had linear plot
+
+2. Scatter plots of, say, 
+
+avg_rss12_mean vs var_rss23_std          in d_i
+
+AND
+
+avg_rss12_mean_1 vs var_rss23_std_1      in d_ii
+avg_rss12_mean_2 vs var_rss23_std_2      in d_ii
+avg_rss12_mean_1 vs var_rss23_std_2      in d_ii
+avg_rss12_mean_2 vs var_rss23_std_1      in d_ii
+
+Had similar natures and approximately similar curves
+
+
+Thus a curve in d_i would be similar to a curve in d_ii in so far as feature (mean,std,min,max,etc.) and
+time series matched with each other. Splitting didn't make much difference in the generic curve natures
+
+
+
+THUS, Final Conclusions :
+
+1. In d_ii same time series, same feature, split portions                                     -----------------        Approximately Linear Curve
+2. Comparing d_i and d_ii, curves versus corresponding time series and corresponding features -----------------        Similar Nature Irrespective of Split (_1/_2 Header)
+
+Additionally all histograms in d_i and d_ii were similar, irrespective of split, for corresponding time series and corresponding feature
+
+i.e. avg_rss12_mean vs avg_rss12_mean in d_i  ------ SIMILAR TO ------ avg_rss12_mean_1 vs avg_rss12_mean_1 in d_ii -------- SIMILAR TO----- avg_rss12_mean_2 vs avg_rss12_mean_2 in d_ii
+
+
+Thus quite a few similarities between the d_i and d_ii scatterplots. Thus to reduce the number of predictors one could prefer the non-split version of the 
+original dataset    

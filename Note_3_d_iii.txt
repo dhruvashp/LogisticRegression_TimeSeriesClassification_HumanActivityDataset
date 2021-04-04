@@ -1,0 +1,17 @@
+Note :
+
+We haven't used stratified cross validation, as I didn't see major
+issues of class balance in this dataset
+
+Using it would be rather simple, and would just require us to change
+Kfold to StratifiedKfold using scikit learn library
+
+Again,
+Only simple Kfold has been used here, not Stratified Kfold
+
+(Prediction errors on the test set, that is the validation set,
+for Kfold were not more than 5-10 %)
+
+(Thus as the prediction errors were bound, and were not much, I have
+assumed that the problem of class imbalance here was minor, if at all
+any, and thus we could use simple Kfold against the stratified version)
