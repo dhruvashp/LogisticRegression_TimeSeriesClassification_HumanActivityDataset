@@ -1,0 +1,1 @@
+# LogisticRegression_TimeSeriesClassification_HumanActivityDataset
